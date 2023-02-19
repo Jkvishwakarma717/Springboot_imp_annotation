@@ -11,13 +11,6 @@ import service.MessageService;
 
 public class TestFCM {
 	public static void main(String[] args) {
-		JSONObject data1 = new JSONObject();
-		data1.put("t",String.valueOf(88));
-		System.out.println(data1);
-		System.exit(0);
-
-
-
 		String csvHeader = "gcmid";
 		CampaignService campaign = new CampaignService(1);
 		List<HashMap<String, String>> scheduledCampaigns = campaign.getScheduledCampaigns(3);
